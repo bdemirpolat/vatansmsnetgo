@@ -1,4 +1,4 @@
-package vatansms
+package vatansmsnetgo
 
 const SettingsUrl = "http://gw.mobilisim.com/api/json/reply/GetSettings"
 const OneToNUrl = "http://gw.mobilisim.com/api/json/reply/Submit"

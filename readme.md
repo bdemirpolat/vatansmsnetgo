@@ -1,6 +1,6 @@
 ## www.vatansms.net Golang Paketi
 ### Hesap bilgileri ve kredi sorgulamak için;
-    settings := vatansms.Settings{}
+    settings := vatansmsnetgo.Settings{}
     settings.Credential.Username = "vatan"
     settings.Credential.Password = "123456"
     settingsResponse,err := settings.GetSettings()
@@ -10,7 +10,7 @@
     fmt.Println(settingsResponse)
    
 ### Bir mesajı N numaraya göndermek için;
-    oneToNSms := vatansms.OneToN{}
+    oneToNSms := vatansmsnetgo.OneToN{}
     oneToNSms.Credential.Username = "vatan"
     oneToNSms.Credential.Password = "123456"
     oneToNSms.Message = "merhaba"
@@ -29,7 +29,7 @@
     fmt.Println(oneToNResponse)
     
 ### N mesajı N numaraya göndermek için;
-    nToNSms := vatansms.NToNSms{}
+    nToNSms := vatansmsnetgo.NToNSms{}
     nToNSms.Credential.Username = "vatan"
     nToNSms.Credential.Password = "123456"
     nToNSms.Header.From = "VATANSMS"
@@ -55,7 +55,7 @@
 
 
 ### Tarih aralığı ile mesajların sonuç toplamları için;
-    reportStats := vatansms.ReportStats{}
+    reportStats := vatansmsnetgo.ReportStats{}
 	reportStats.Credential.Username = "vatan"
 	reportStats.Credential.Password = "123456"
 	reportStats.Range.Begin = time.Now().AddDate(0,0,-1).Format("2006-01-02T15:04:05-0700")
@@ -68,7 +68,7 @@
 
 
 ### Mesajın detaylı olarak numaralara ulaştı/ulaşmadı durumunu sorgulamak için;
-    reportDetails := vatansms.ReportDetails{}
+    reportDetails := vatansmsnetgo.ReportDetails{}
 	reportDetails.Credential.Username = "vatan"
 	reportDetails.Credential.Password = "123456"
 	reportDetails.MessageId = 1142477679

@@ -1,4 +1,4 @@
-package vatansms
+package vatansmsnetgo
 
 import "regexp"
 

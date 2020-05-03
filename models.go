@@ -1,4 +1,4 @@
-package vatansms
+package vatansmsnetgo
 
 type Credential struct {
 	Username string
