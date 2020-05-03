@@ -85,16 +85,11 @@ type ReportStatsResponse struct {
 	Response struct {
 		Report struct {
 			List []struct {
-				Id               int
-				Received         string
-				Sent             string
-				State            string
-				Cost             int
-				Message          string
-				Coding           string
-				DeliveredCount   int
-				Count            int
-				UndeliveredCount int
+				Year        int
+				Month       int
+				Delivered   int
+				Undelivered int
+				Count       int
 			}
 		}
 		Status Status
