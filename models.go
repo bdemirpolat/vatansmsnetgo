@@ -89,7 +89,7 @@ type ReportStatsResponse struct {
 				Received         string
 				Sent             string
 				State            string
-				Cost             int
+				Cost             float32
 				Message          string
 				Coding           string
 				DeliveredCount   int
